@@ -2,5 +2,5 @@
 ARG source
 WORKDIR /app
 EXPOSE 80
-COPY ${source:-bin/Release/netcoreapp1.1/publish}  .
+COPY ${source:-bin/Release/PublishOutput}  .
 ENTRYPOINT ["dotnet", "dockergithub.dll"]
